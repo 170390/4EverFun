@@ -1,15 +1,9 @@
-function mostrar(id) {
-
-    let secciones = document.querySelectorAll(".seccion");
-
-    secciones.forEach(sec => {
-        sec.classList.remove("active");
-    });
-
-    document.getElementById(id).classList.add("active");
+function mostrar(id){
+let sec=document.querySelectorAll(".seccion");
+sec.forEach(s=>s.classList.remove("active"));
+document.getElementById(id).classList.add("active");
 }
 
-// Mostrar visión al inicio
-document.addEventListener("DOMContentLoaded", function() {
-    mostrar('vision');
+document.addEventListener("DOMContentLoaded", ()=>{
+mostrar('vision');
 });
