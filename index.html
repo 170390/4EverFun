@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Empresa</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>4EverFun</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- MENU IZQUIERDO -->
-    <aside class="menu">
-        <h2>Menú</h2>
-        <ul>
-            <li onclick="mostrar('vision')">Visión</li>
-            <li onclick="mostrar('mision')">Misión</li>
-            <li onclick="mostrar('catalogo')">Catálogo</li>
-            <li onclick="mostrar('galeria')">Galería</li>
-            <li onclick="mostrar('contacto')">Contacto</li>
-        </ul>
-    </aside>
+<!-- MENU -->
+<aside class="menu">
+<h1>4EverFun</h1>
+<ul>
+<li onclick="mostrar('vision')">Visión</li>
+<li onclick="mostrar('mision')">Misión</li>
+<li onclick="mostrar('catalogo')">Catálogo</li>
+<li onclick="mostrar('galeria')">Galería</li>
+<li onclick="mostrar('contacto')">Contacto</li>
+</ul>
+</aside>
 
-    <!-- CONTENIDO CENTRAL -->
-    <main class="contenido">
+<!-- CONTENIDO -->
+<main class="contenido">
 
-        <div id="vision" class="seccion">
-            <h2>Visión</h2>
-            <p>Nuestra visión es ser líderes en el mercado...</p>
-        </div>
+<div id="vision" class="seccion">
+<h2>Visión</h2>
+<p>Ser la empresa líder en entretenimiento y diversión creando experiencias inolvidables.</p>
+</div>
 
-        <div id="mision" class="seccion">
-            <h2>Misión</h2>
-            <p>Nuestra misión es ofrecer soluciones de calidad...</p>
-        </div>
+<div id="mision" class="seccion">
+<h2>Misión</h2>
+<p>Ofrecer servicios innovadores que lleven alegría y diversión a cada evento.</p>
+</div>
 
-        <div id="catalogo" class="seccion">
-            <h2>Catálogo</h2>
-            <p>Aquí puedes mostrar tus productos o servicios.</p>
-        </div>
+<div id="catalogo" class="seccion">
+<h2>Catálogo</h2>
 
-        <div id="galeria" class="seccion">
-            <h2>Galería</h2>
+<div class="producto">
+<img src="producto1.jpg">
+<h3>Servicio 1</h3>
+<p>Descripción del servicio.</p>
+</div>
 
-            <h3>Fotos</h3>
-            <img src="foto1.jpg" class="media">
-            <img src="foto2.jpg" class="media">
-
-            <h3>Video</h3>
-            <video controls class="media">
-                <source src="video.mp4" type="video/mp4">
-                Tu navegador no soporta video.
-            </video>
-        </div>
-
-        <div id="contacto" class="seccion">
-            <h2>Contacto</h2>
-            <p>Email: contacto@miempresa.com</p>
-            <p>Tel: 8888-8888</p>
-        </div>
-
-    </main>
-
-    <!-- ANUNCIOS DERECHA -->
-    <aside class="anuncios">
-        <h2>Anunciantes</h2>
-        <div class="anuncio">Espacio Publicitario</div>
-        <div class="anuncio">Tu anuncio aquí</div>
-    </aside>
+<div class="producto">
+<img src="producto2.jpg">
+<h3>Servicio 2</h3>
+<p>Descripción del servicio.</p>
+</div>
 
 </div>
 
+<div id="galeria" class="seccion">
+<h2>Galería</h2>
+
+<img src="foto1.jpg" class="media">
+
+<video controls class="media">
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div id="contacto" class="seccion">
+<h2>Contáctanos</h2>
+
+<form action="https://formsubmit.co/TUEMAIL@gmail.com" method="POST">
+
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+<input type="email" name="email" placeholder="Tu correo" required>
+<textarea name="mensaje" placeholder="Tu mensaje"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</div>
+
+</main>
+
+<!-- ANUNCIOS -->
+<aside class="anuncios">
+
+<h3>Anunciantes</h3>
+
+<div class="ads">
+<!-- GOOGLE ADS PEGAR AQUI -->
+Espacio para publicidad
+</div>
+
+</aside>
+
+</div>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://wa.me/505XXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
 <script src="script.js"></script>
+
 </body>
 </html>
