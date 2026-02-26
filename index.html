@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- MENU IZQUIERDO -->
+    <aside class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li onclick="mostrar('vision')">Visión</li>
+            <li onclick="mostrar('mision')">Misión</li>
+            <li onclick="mostrar('catalogo')">Catálogo</li>
+            <li onclick="mostrar('galeria')">Galería</li>
+            <li onclick="mostrar('contacto')">Contacto</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENIDO CENTRAL -->
+    <main class="contenido">
+
+        <div id="vision" class="seccion">
+            <h2>Visión</h2>
+            <p>Nuestra visión es ser líderes en el mercado...</p>
+        </div>
+
+        <div id="mision" class="seccion">
+            <h2>Misión</h2>
+            <p>Nuestra misión es ofrecer soluciones de calidad...</p>
+        </div>
+
+        <div id="catalogo" class="seccion">
+            <h2>Catálogo</h2>
+            <p>Aquí puedes mostrar tus productos o servicios.</p>
+        </div>
+
+        <div id="galeria" class="seccion">
+            <h2>Galería</h2>
+
+            <h3>Fotos</h3>
+            <img src="foto1.jpg" class="media">
+            <img src="foto2.jpg" class="media">
+
+            <h3>Video</h3>
+            <video controls class="media">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+
+        <div id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>Email: contacto@miempresa.com</p>
+            <p>Tel: 8888-8888</p>
+        </div>
+
+    </main>
+
+    <!-- ANUNCIOS DERECHA -->
+    <aside class="anuncios">
+        <h2>Anunciantes</h2>
+        <div class="anuncio">Espacio Publicitario</div>
+        <div class="anuncio">Tu anuncio aquí</div>
+    </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
