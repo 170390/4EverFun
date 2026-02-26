@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* IZQUIERDA */
+.menu {
+    width: 20%;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #34495e;
+}
+
+/* CENTRO */
+.contenido {
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.seccion {
+    display: none;
+}
+
+.seccion.active {
+    display: block;
+}
+
+/* GALERIA */
+.media {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+/* DERECHA */
+.anuncios {
+    width: 20%;
+    background: #ecf0f1;
+    padding: 20px;
+}
+
+.anuncio {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
