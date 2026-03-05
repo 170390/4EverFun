@@ -10,7 +10,7 @@ height:100vh;
 
 /* MENU */
 .menu {
-width:15%;
+width:20%;
 background:linear-gradient(#007bff,#6f42c1);
 color:white;
 padding:20px;
@@ -29,7 +29,7 @@ color:#ff9800;
 
 /* CONTENIDO */
 .contenido {
-width:70%;
+width:65%;
 padding:20px;
 overflow:auto;
 }
