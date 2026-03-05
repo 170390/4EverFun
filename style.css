@@ -15,7 +15,6 @@ background:linear-gradient(#007bff,#6f42c1);
 color:white;
 padding:20px;
 animation:slide 1s;
-text-align:center;
 }
 
 .menu li {
@@ -33,7 +32,6 @@ color:#ff9800;
 width:65%;
 padding:20px;
 overflow:auto;
-text-align:center;
 }
 
 .seccion {
@@ -53,7 +51,6 @@ margin:10px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
 transition:0.3s;
-text-align:center;
 }
 
 .producto:hover {
@@ -66,7 +63,6 @@ width:100%;
 max-width:400px;
 margin:10px 0;
 border-radius:10px;
-text-align:center;
 }
 
 /* ANUNCIOS */
