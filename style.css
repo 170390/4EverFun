@@ -100,3 +100,54 @@ to {transform:translateX(0);}
 from {opacity:0;}
 to {opacity:1;}
 }
+
+body {
+background: linear-gradient(-45deg, #007bff, #6f42c1, #ff9800);
+background-size: 400% 400%;
+animation: fondo 10s ease infinite;
+}
+
+@keyframes fondo {
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+100% {background-position: 0% 50%;}
+}
+
+.logo {
+width:150px;
+margin-bottom:20px;
+}
+
+.reservar {
+display:block;
+background:#ff9800;
+color:white;
+padding:12px;
+text-align:center;
+border-radius:10px;
+text-decoration:none;
+margin-top:20px;
+transition:0.3s;
+}
+
+.reservar:hover {
+background:#ff5722;
+transform:scale(1.05);
+}
+
+.tienda {
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn {
+display:block;
+background:#6f42c1;
+color:white;
+padding:10px;
+text-align:center;
+border-radius:8px;
+text-decoration:none;
+margin-top:10px;
+}
