@@ -29,9 +29,12 @@ color:#ff9800;
 
 /* CONTENIDO */
 .contenido {
-width:65%;
+width:60%;
 padding:20px;
 overflow:auto;
+}
+.contenido h2{
+font-size:32px;
 }
 
 .seccion {
@@ -73,9 +76,11 @@ padding:20px;
 text-align:center;
 }
 
-.ads {
-background:white;
+.ads{
+background:linear-gradient(45deg,#ff9800,#ff5722);
 height:250px;
+border-radius:10px;
+margin-top:20px;
 }
 
 .whatsapp {
@@ -120,8 +125,8 @@ animation: fondo 10s ease infinite;
 .logo{
 display:block;
 margin:auto;
-width:150px;
-margin-bottom:20px;
+width:200px;
+margin-bottom:30px;
 }
 
 .reservar {
@@ -224,8 +229,10 @@ margin-top:20px;
 .menu ul{
 list-style:none;
 padding:0;
+text-align:center;
 }
 
 .menu li{
-margin:15px 0;
+margin:18px 0;
+font-size:18px;
 }
