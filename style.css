@@ -3,9 +3,9 @@ margin:0;
 font-family:'Poppins', sans-serif;
 }
 
-.container {
+.container{
 display:flex;
-height:100vh;
+min-height:100vh;
 }
 
 /* MENU */
@@ -399,4 +399,53 @@ height:auto;
 .menu ul{
 display:flex;
 flex-direction:column;
+}
+
+  @media (max-width:768px){
+
+.container{
+flex-direction:column;
+}
+
+/* MENU */
+.menu{
+width:100%;
+}
+
+/* CONTENIDO (EL CENTRO) */
+.contenido{
+width:100%;
+padding:15px;
+}
+
+/* PUBLICIDAD */
+.publicidad{
+width:100%;
+margin-top:20px;
+}
+
+/* IMPORTANTE: quitar tamaños fijos */
+.menu, .contenido, .publicidad{
+flex:none;
+}
+
+body{
+margin:0;
+}
+
+body{
+margin:0;
+}
+
+  body{
+margin:0;
+}
+
+*{
+box-sizing:border-box;
+}
+
+  html, body{
+width:100%;
+overflow-x:hidden;
 }
