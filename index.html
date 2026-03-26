@@ -5,6 +5,9 @@
 <title>4EverFun</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
 </head>
 
 <body>
@@ -21,6 +24,11 @@
 <li onclick="mostrar('galeria')">Galería</li>
 <li onclick="mostrar('contacto')">Contacto</li>
 <a href="https://wa.me/5057859930" class="reservar" target="_blank">Reservar Ahora</a>
+<h2>Calendario de Eventos</h2>
+
+<div id="calendar"></div>
+
+<button onclick="agregarEvento()">Agendar Evento</button>  
 </aside>
 
 <!-- CONTENIDO -->
@@ -159,6 +167,59 @@ Publicidad
 </a>
 
 <script src="script.js"></script>
+<script>
 
+let eventos = {}
+
+document.addEventListener('DOMContentLoaded', function() {
+
+let calendarEl = document.getElementById('calendar');
+
+let calendar = new FullCalendar.Calendar(calendarEl, {
+
+initialView: 'dayGridMonth',
+
+dateClick: function(info) {
+agregarEvento(info.dateStr);
+},
+
+events: []
+
+});
+
+calendar.render();
+
+window.calendar = calendar;
+
+});
+
+
+function agregarEvento(fecha){
+
+if(!fecha){
+fecha = prompt("Ingrese fecha (YYYY-MM-DD)");
+}
+
+if(!eventos[fecha]){
+eventos[fecha] = 0;
+}
+
+eventos[fecha]++;
+
+let color = "green";
+
+if(eventos[fecha] >= 2){
+color = "red";
+}
+
+calendar.addEvent({
+title: "Evento",
+start: fecha,
+color: color
+});
+
+}
+
+</script>
 </body>
 </html>
