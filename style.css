@@ -246,3 +246,33 @@ padding:30px;
 .contenido h2{
 font-size:32px;
 }
+
+.catalogo{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+border-radius:10px;
+width:250px;
+padding:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
