@@ -236,3 +236,13 @@ text-align:center;
 margin:18px 0;
 font-size:18px;
 }
+
+.contenido{
+color:white;
+font-size:20px;
+padding:30px;
+}
+
+.contenido h2{
+font-size:32px;
+}
