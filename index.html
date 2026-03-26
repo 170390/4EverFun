@@ -229,5 +229,25 @@ color: color
 }
 
 </script>
+
+<script>
+
+function toggleMenu(){
+let menu = document.getElementById("menu")
+menu.classList.toggle("active")
+}
+
+</script>
+<script>
+
+let links = document.querySelectorAll(".menu a")
+
+links.forEach(link => {
+link.addEventListener("click", () => {
+document.getElementById("menu").classList.remove("active")
+})
+})
+
+</script>
 </body>
 </html>
