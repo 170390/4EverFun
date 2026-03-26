@@ -272,6 +272,53 @@ transition:transform 0.3s;
 transform:scale(1.05);
 }
 
+.galeria{
+padding:40px;
+text-align:center;
+}
+
+.grid-galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.grid-galeria img{
+width:100%;
+border-radius:10px;
+transition:transform 0.3s;
+}
+
+.grid-galeria img:hover{
+transform:scale(1.1);
+}
+
+.video{
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.contenedor{
+grid-template-columns:1fr;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.grid-galeria{
+grid-template-columns:1fr 1fr;
+}
+
+.logo{
+width:150px;
+}
+
+}
+
 .card img{
 width:100%;
 border-radius:10px;
