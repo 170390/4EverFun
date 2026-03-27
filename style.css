@@ -602,3 +602,42 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+/* BOTON ☰ */
+.menu-toggle{
+display:none;
+font-size:30px;
+background:#6a1b9a;
+color:white;
+padding:10px;
+text-align:center;
+cursor:pointer;
+}
+
+/* 📱 MOVIL */
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+/* OCULTAR MENU */
+.menu{
+position:fixed;
+top:0;
+left:0;
+width:70%;
+height:100%;
+background:#6a1b9a;
+display:none;
+flex-direction:column;
+z-index:1000;
+padding-top:20px;
+}
+
+/* MOSTRAR */
+.menu.active{
+display:flex;
+}
+
+}
