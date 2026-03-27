@@ -635,6 +635,13 @@ z-index:1000;
 padding-top:20px;
 }
 
+#objetivo, #mision, #catalogo, #galeria, #contacto{
+display:none;
+}
+
+#vision{
+display:block;
+}
 /* MOSTRAR */
 .menu.active{
 display:flex;
