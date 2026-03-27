@@ -255,13 +255,13 @@ color: color
 
 <script>
 
-<script>
-
+// MENU
 function toggleMenu(){
 let menu = document.getElementById("menu")
 menu.classList.toggle("active")
 }
 
+// MOSTRAR SECCIONES
 function mostrar(seccion){
 
 let secciones = [
@@ -275,14 +275,23 @@ let secciones = [
 
 // ocultar todo
 secciones.forEach(id => {
-document.getElementById(id).style.display="none"
+let el = document.getElementById(id)
+if(el){
+el.style.display = "none"
+}
 })
 
 // mostrar seleccionado
-document.getElementById(seccion).style.display="block"
+let mostrar = document.getElementById(seccion)
+if(mostrar){
+mostrar.style.display = "block"
+}
 
-// cerrar menú
-document.getElementById("menu").classList.remove("active")
+// cerrar menú en celular
+let menu = document.getElementById("menu")
+if(menu){
+menu.classList.remove("active")
+}
 
 }
 
