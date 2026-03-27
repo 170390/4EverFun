@@ -449,3 +449,71 @@ box-sizing:border-box;
 width:100%;
 overflow-x:hidden;
 }
+
+  /* BOTON ☰ */
+.menu-toggle{
+display:none;
+font-size:30px;
+background:#6a1b9a;
+color:white;
+padding:10px;
+text-align:center;
+cursor:pointer;
+}
+
+/* MENU NORMAL (PC) */
+.menu{
+width:250px;
+background:#6a1b9a;
+color:white;
+}
+
+/* 📱 VERSION CELULAR */
+@media (max-width:768px){
+
+/* MOSTRAR BOTON */
+.menu-toggle{
+display:block;
+}
+
+/* MENU OCULTO */
+.menu{
+position:absolute;
+top:0;
+left:0;
+width:70%;
+height:100vh;
+display:none;
+flex-direction:column;
+z-index:1000;
+}
+
+/* CUANDO SE ABRE */
+.menu.active{
+display:flex;
+}
+
+/* ESTILO ITEMS */
+.menu ul{
+padding:0;
+}
+
+.menu ul li{
+padding:15px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+text-align:center;
+}
+
+/* BOTON RESERVAR */
+.reservar{
+display:block;
+margin:20px;
+text-align:center;
+background:#ff9800;
+padding:12px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+}
+
+}
