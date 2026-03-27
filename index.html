@@ -21,7 +21,7 @@
 <!-- MENU -->
 <aside class="menu" id="menu">
 
-<img src="logo.png" class="logo">
+<img src="logo.png" class="logo" onclick="mostrar('objetivo')">
 
 <ul>
 <li onclick="mostrar('vision')">Visión</li>
@@ -50,6 +50,23 @@ Reservar Ahora
 <p>Ofrecer servicios innovadores que lleven alegría y diversión a cada evento.</p>
 </div>
 
+<div id="objetivo" style="display:none;">
+
+<h2>Nuestro Objetivo</h2>
+
+<p>
+En <strong>4EverFun</strong> nos dedicamos a crear momentos inolvidables para niños y familias,
+ofreciendo el alquiler de brincolines inflables seguros, modernos y llenos de diversión.
+
+Nuestro objetivo es convertir cada evento en una experiencia única, brindando alegría,
+entretenimiento y tranquilidad a nuestros clientes mediante un servicio puntual,
+responsable y de alta calidad.
+
+Hacemos que cada celebración sea más divertida, colorida y especial.
+</p>
+
+</div>
+  
 <div id="catalogo" class="seccion">
 <h2>Catálogo</h2>
 
@@ -228,6 +245,8 @@ color: color
 
 <script>
 
+<script>
+
 function toggleMenu(){
 let menu = document.getElementById("menu")
 menu.classList.toggle("active")
@@ -235,14 +254,21 @@ menu.classList.toggle("active")
 
 function mostrar(seccion){
 
-// ocultar todo
-let secciones = ["vision","mision","catalogo","galeria","contacto"]
+let secciones = [
+"objetivo",
+"vision",
+"mision",
+"catalogo",
+"galeria",
+"contacto"
+]
 
+// ocultar todo
 secciones.forEach(id => {
 document.getElementById(id).style.display="none"
 })
 
-// mostrar uno
+// mostrar seleccionado
 document.getElementById(seccion).style.display="block"
 
 // cerrar menú
@@ -251,5 +277,6 @@ document.getElementById("menu").classList.remove("active")
 }
 
 </script>
+
 </body>
 </html>
