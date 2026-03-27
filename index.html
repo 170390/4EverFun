@@ -235,10 +235,18 @@ menu.classList.toggle("active")
 
 function mostrar(seccion){
 
-document.getElementById("menu").classList.remove("active")
+// ocultar todo
+let secciones = ["vision","mision","catalogo","galeria","contacto"]
 
-// tu código existente
-console.log("Mostrar:", seccion)
+secciones.forEach(id => {
+document.getElementById(id).style.display="none"
+})
+
+// mostrar uno
+document.getElementById(seccion).style.display="block"
+
+// cerrar menú
+document.getElementById("menu").classList.remove("active")
 
 }
 
