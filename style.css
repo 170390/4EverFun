@@ -517,3 +517,38 @@ text-decoration:none;
 }
 
 }
+
+  #objetivo{
+background:linear-gradient(135deg,#2196f3,#8e24aa);
+color:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+animation:fadeIn 0.5s ease;
+}
+
+#objetivo h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+#objetivo p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* animación */
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+#objetivo{
+display:block;
+}
